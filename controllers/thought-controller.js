@@ -11,12 +11,8 @@ const thoughtController = {
             });
     },
     //get one thought by id
-    getThoughtById({
-        params
-    }, res) {
-        Thought.findOne({
-                _id: params.id
-            })
+    getThoughtById({params}, res) {
+        Thought.findOne({ _id: params.id })
             .select('-__v')
             .sort({
                 _id: -1
