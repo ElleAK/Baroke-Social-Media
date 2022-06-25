@@ -4,19 +4,15 @@ const { Schema, model } = require('mongoose');
 const UserSchema = new Schema({
     username: {
         type: String,
-        //unique: true,
+        unique: true,
         required: true,
-        //trimmed: true
+        trim: true
     },
     email: {
         type: String,
         required: true,
-        //unique: true,
+        unique: true,
         //Must match a valid email address (look into Mongoose's matching validation)
-    },
-    username: {
-        type: String,
-        required: true
     },
     thoughts: {
     //Array of _id values referencing the Thought model
