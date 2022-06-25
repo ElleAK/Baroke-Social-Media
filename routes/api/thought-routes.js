@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const { addThought } = require('../../conrtollers/thought-controller');
+const { addThought } = require('../../controllers/thought-controller');
 
 // api/thoughts/<thoughtsId>
 router.route('/:thoughtId').post(addThought);

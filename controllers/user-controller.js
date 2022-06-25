@@ -1,12 +1,7 @@
 const { User } = require('../models');
 
 const userController = {
-    // createUser
-    createUser({ body }, res) {
-        User.create(body)
-        .then(dbUserData => res.json(dbUserData))
-        .catch(err => res.status(400).json(err));
-    },
+
     //functions for get all users, call back function for GET/api/users
     getAllUser(req, res) {
         User.find({})
@@ -43,6 +38,12 @@ const userController = {
             res.status(400).json(err);
         });
     },
+        // createUser
+        createUser({ body }, res) {
+            User.create(body)
+            .then(dbUserData => res.json(dbUserData))
+            .catch(err => res.status(400).json(err));
+        },
     // update User by id
     updateUser({ params, body }, res) {
         User.findOneAndUpdate({ _id: params.id }, body, { new: true })
