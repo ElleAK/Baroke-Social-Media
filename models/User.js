@@ -5,14 +5,14 @@ const UserSchema = new Schema({
     username: {
         type: String,
         unique: true,
-        required: true,
-        //trim: true
+        required: "Username is required",
+        trim: true
     },
     email: {
         type: String,
-        required: true,
-        unique: true
-        //Must match a valid email address (look into Mongoose's matching validation)
+        required: "Email is required",
+        unique: true,
+        match: [/.+@.+\..+/, 'Please enter a valid e-mail address']
     },
     //thoughts: [
     //Array of _id values referencing the Thought model
