@@ -11,7 +11,7 @@
   - [Questions](#questions)
 
   ## Description:
-  #### This social media application brings artists together. Users can add friends and discuss art!
+  #### This social media application brings people together. Users can add and remove friends. A users thoughts can be posted and removed. Reactions to users thoughts can be added and removed as well.
 
   ## Installation:
   #### Before using this application please install npm express, and mongoose
@@ -26,7 +26,7 @@
   #### Lindsey Kelly
 
   ## Deployed Site:
-  #### https://github.com/ElleAK/README-Generator
+  #### https://elleak.github.io/Baroke-Social-Media/
 
   ## License: ![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)
   #### https://opendatacommons.org/licenses/pddl/
@@ -35,4 +35,4 @@
   ### If you have any questions regarding this repository please contact me by GitHub:
   #### username: ElleAK
   ### Or email:
-  #### nightbirdphotos@gmail.com
+  #### nightbirdphoto@gmail.com
